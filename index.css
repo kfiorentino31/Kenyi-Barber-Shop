@@ -208,3 +208,77 @@ nav a:active{
     height: 20px;
     width: 20px;
 }
+
+@media (max-width: 768px) {
+
+    /* Coloca el título y el logo del header verticalmente */
+    header {
+        height: auto;
+        flex-direction: column;
+        gap: 10px;
+        padding: 15px;
+        text-align: center;
+    }
+
+    /* Reduce el tamaño del logo */
+    #logo_1 img {
+        width: 220px;
+    }
+
+    /* Permite que los enlaces bajen a otra línea */
+    nav {
+        flex-wrap: wrap;
+        gap: 8px;
+        padding: 10px;
+    }
+
+    /* Reduce el tamaño de los botones del menú */
+    nav a {
+        padding: 8px 10px;
+        font-size: 15px;
+    }
+
+    /* Evita que el hover aumente demasiado los botones */
+    nav a:hover {
+        font-size: 15px;
+        transform: scale(1.05);
+    }
+
+    /* Reduce el tamaño del título principal */
+    .portada h2 {
+        font-size: 30px;
+        letter-spacing: 1px;
+        padding: 10px;
+    }
+
+    /* Coloca la cuadrícula y el slide uno debajo del otro */
+    .contenido {
+        flex-direction: column;
+        gap: 20px;
+        padding: 12px;
+    }
+
+    /* Mantiene dos imágenes por fila */
+    .cortes {
+        width: 100%;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 10px;
+    }
+
+    /* Reduce la altura de las imágenes pequeñas */
+    .cortes img {
+        height: 190px;
+    }
+
+    /* El slide ocupa todo el ancho */
+    .slide {
+        width: 100%;
+        height: 400px;
+    }
+
+    /* Reduce el espacio interior del footer */
+    .footer {
+        padding: 18px 10px;
+        font-size: 14px;
+    }
+}
