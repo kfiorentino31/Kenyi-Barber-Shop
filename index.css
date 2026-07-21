@@ -4,23 +4,24 @@
     box-sizing: border-box;
 }
 
+.fondo-principal{
+    flex: 1;
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.20),
+        rgba(0, 0, 0, 0.20)),
+        url("Imagenes/Cover_2.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+}
+
 
 body{
     margin: 0;
     background-color: #f2f2f2;
-    min-height: 120vh;
-
-    background-image:
-        linear-gradient(
-            rgba(0, 0, 0, 0.20),
-            rgba(0, 0, 0, 0.20)
-        ),
-        url("./Imagenes/Cover_2.png");
-
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    flex-direction: column center;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 header{
@@ -117,7 +118,7 @@ nav a:active{
     transition: 1s;
 }
 
-.portada h2{
+.portada h2{    
     margin: 0;
     padding:0;
 
@@ -135,7 +136,10 @@ nav a:active{
     display: flex;
     gap: 30px;
     padding: 20px;
-    background-color: black;
+    background-color: linear-gradient(
+            rgba(255, 255, 255, 0.4),
+            rgba(255, 255, 255, 0.4)
+        );
     align-items: stretch;
 }
 
@@ -177,10 +181,30 @@ nav a:active{
     opacity: 1;
 }
 
-.footer{
+.contacto{
+    margin: 0;
+    padding-top: 20px;
     background-color: black;
     color: white;
-    margin: 0;
+    text-align: center;
+    margin-top: auto;
+}
+
+#direccion a{
+    color: white;
+    text-decoration: none;
+}
+
+#telefono{
+    border: 0;
+    padding: 0;
+    background-color: black;
+    color: white;
     padding: 25px;
     text-align: center;
+}
+
+.contacto img{
+    height: 20px;
+    width: 20px;
 }

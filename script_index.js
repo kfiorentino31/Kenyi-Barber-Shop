@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const imagenes = document.querySelectorAll(".slider img");
+    const imagenes = document.querySelectorAll(".slide img");
 
     if (imagenes.length === 0) {
         return;
@@ -23,5 +23,5 @@ document.addEventListener("DOMContentLoaded", function () {
     // Elimina otro temporizador anterior, si existiera
     clearInterval(window.temporizadorSlider);
 
-    window.temporizadorSlider = setInterval(cambiarImagen, 6000);
+    window.temporizadorSlider = setInterval(cambiarImagen, 5000);
 });
