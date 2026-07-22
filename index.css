@@ -15,7 +15,6 @@
         background-position: center;
 }
 
-
 body{
     margin: 0;
     background-color: #f2f2f2;
@@ -272,9 +271,21 @@ nav a:active{
 
     /* El slide ocupa todo el ancho */
     .slide {
-        width: 100%;
-        height: 400px;
-    }
+    /* Evita que Flexbox calcule o reduzca su altura */
+    flex: none;
+
+    /* Ocupa todo el ancho disponible */
+    width: 100%;
+
+    /* Crea una altura proporcional al ancho */
+    aspect-ratio: 4 / 3;
+
+    /* Anula la altura fija utilizada en computadoras */
+    height: auto;
+
+    /* Mantiene ocultas las partes que sobresalgan */
+    overflow: hidden;
+}
 
     /* Reduce el espacio interior del footer */
     .footer {
