@@ -24,6 +24,7 @@ body{
     min-height: 100vh;
 }
 
+
 header{
     height: 120px;
     margin: 0;
@@ -55,6 +56,16 @@ header{
     display: block;
 }
 
+#logo_1 img:hover {
+    transform: scale(0.9);
+    transition: 1s;
+}
+
+#logo_1 img:active {
+    transform: scale(0.85);
+    transition: 1s;
+}
+
 .fondo_header img{
     display: inline;
     background-size: cover;
@@ -73,6 +84,8 @@ header{
 
 .titulos{
     font-size: 20px;
+    color: rgb(255, 165, 0);
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
 #main-nav {
@@ -109,8 +122,8 @@ nav a:hover {
     background-color: black;
     color: goldenrod;
     font-size: 20px;
-    transform: scale(1.3);
-    transition: 1.3s;
+    transform: scale(1.2);
+    transition: 1.2s;
 }
 
 nav a:active{
@@ -122,12 +135,13 @@ nav a:active{
     margin: 0;
     padding:0;
 
-    color: goldenrod;
+    color: rgb(255,165,0);
     font-family: Bodoni Moda SC;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
     font-size: clamp(40px, 3vw, 48px);
     letter-spacing: 3px;
     text-align: center;
-    -webkit-text-stroke: black 0.5px;
+    
 }
 
 /*================= control de fotos en la pagina principal =================*/
@@ -269,6 +283,7 @@ footer {
     transition: 1.3s;
 }
 
+/*====================== Vista mobil móvil ======================*/
 @media (max-width: 768px) {
 
     header {
